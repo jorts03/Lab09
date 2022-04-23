@@ -4,6 +4,46 @@
   </head>
 
   <body>
+    <form action="customerBackend.php" method="post">
       <h1>Web Store</h1>
+      <p>Item 1: $1</p>
+      <label for="1">Item Quantity</label>
+      <input type="text" id="1" name="1" />
+
+      <p>Item 2: $2</p>
+      <label for="2">Item Quantity</label>
+      <input type="text" id="2" name="2" />
+
+      <p>Item 3: $3</p>
+      <label for="3">Item Quantity</label>
+      <input type="text" id="3" name="3" />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <input type="text" id="Password" name="Password" />
+      <br />
+      <br />
+
+      <label for="free">Free 7 day</label>
+      <input type="radio" id="free" value="free" name="shipping" />
+      <br />
+      <label for="three">$5.00 three day</label>
+      <input type="radio" id="three" value="three" name="shipping" />
+      <br />
+      <label for="night">$50.00 over night</label>
+      <input type="radio" id="night" value="night" name="shipping" />
+      <br />
+      <br />
+
+      <button onclick="window.location.reload();">Reset</button>
+      <input type="submit" />
+    </form>
   </body>
 </html>
