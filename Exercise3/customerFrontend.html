@@ -4,7 +4,9 @@
   </head>
 
   <body>
-    <form action="customerBackend.php" method="post">
+    <script src="formChecker.js"></script>
+
+    <form action="customerBackend.php" method="post" onsubmit="return formChecker()">
       <h1>Web Store</h1>
       <p>Item 1: $1</p>
       <label for="1">Item Quantity</label>
