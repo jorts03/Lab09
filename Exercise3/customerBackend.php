@@ -1,3 +1,5 @@
+<style><?php include "style.css"; ?></style>
+
 <?php
 $item1 = $_POST["1"];
 $item2 = $_POST["2"];
@@ -6,12 +8,13 @@ $email = $_POST["email"];
 $password = $_POST["Password"];
 $shipping = $_POST["shipping"];
 
-echo "Welcome " . $email . " your password is " . $password . "<br>";
+echo "<div class='pheader'>";
+echo "<h2>Welcome " . $email . "<br> Your password is " . $password . "<br> </h2>";
 echo "<br>";
 echo "Your purchase has been processed <br>";
 echo "Here is a copy of your receipt<br>";
 
-echo "<table border =\"1\" style ='border-collapse : collapse'>";
+echo "<table class='table' border =\"1\">";
 echo "<tr>";
 echo "<th> </th>";
 echo "<th>Quantity</th>";
@@ -63,4 +66,5 @@ echo "<td></td>";
 $cost = $item1 + $x + $y + $shipping;
 echo "<th>$" . $cost . "</th>";
 echo "</tr>";
+echo"</div>";
 ?>
