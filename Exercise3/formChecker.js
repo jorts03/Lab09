@@ -29,6 +29,10 @@ const formChecker = () => {
     errors.push("Item 3 Quantity cannot be blank or negative\n");
   }
 
+  if (!(ship[0].checked || ship[1].checked || ship[2].checked)) {
+    errors.push("A shipping option must be selected\n");
+  } else shipBool = true;
+
   let emailCheck =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!emailCheck.test(email)) {
@@ -37,10 +41,6 @@ const formChecker = () => {
   if (password == "" || password == null) {
     errors.push("Password field cannot be left blank\n");
   } else x = true;
-
-  if (!(ship[0].checked || ship[1].checked || ship[2].checked)) {
-    errors.push("A shipping option must be selected\n");
-  } else shipBool = true;
 
   if (
     oneBool == true &&
