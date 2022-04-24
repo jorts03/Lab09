@@ -1,51 +1,95 @@
 <html>
   <head>
     <title>Web Store</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
     <script src="formChecker.js"></script>
 
-    <form action="customerBackend.php" method="post" onsubmit="return formChecker()">
-      <h1>Web Store</h1>
-      <p>Item 1: $1</p>
-      <label for="1">Item Quantity</label>
-      <input type="text" id="1" name="1" />
+    <div class="header">
+      <h1 class="store">Web Store</h1>
+    </div>
+    <div class="space"></div>
 
-      <p>Item 2: $2</p>
-      <label for="2">Item Quantity</label>
-      <input type="text" id="2" name="2" />
+    <form
+      action="customerBackend.php"
+      method="post"
+      onsubmit="return formChecker()"
+    >
+      <div class="item">
+        <div class="p">
+          <p>
+            Product<br />
+            <br />
+            <br />
+            Item1<br />
+            <br />
+            Item2<br />
+            <br />
+            Item3
+          </p>
+          <p>
+            Cost<br />
+            <br />
+            <br />
+            $1<br />
+            <br />
+            $2<br />
+            <br />
+            $3<br />
+          </p>
+          <p>
+            QTY<br />
+            <br />
+            <br />
+            <input type="text" id="1" name="1" class="txt" />
+            <br />
+            <br />
+            <input type="text" id="2" name="2" class="txt" />
+            <br />
+            <br />
+            <input type="text" id="3" name="3" class="txt" />
+          </p>
+        </div>
+      </div>
 
-      <p>Item 3: $3</p>
-      <label for="3">Item Quantity</label>
-      <input type="text" id="3" name="3" />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div class="space"></div>
 
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" />
-      <br />
-      <br />
-      <label for="password">Password</label>
-      <input type="text" id="Password" name="Password" />
-      <br />
-      <br />
+      <div class="shipHead">
+        <h2 style="text-transform: uppercase">Select Shipping</h2>
+        <div class="ship">
+          <label for="0">Free 7 day</label>
+          <input type="radio" id="0" value="0" name="shipping" />
+          <br />
+          <label for="5">$5.00 three day</label>
+          <input type="radio" id="5" value="5" name="shipping" />
+          <br />
+          <label for="50">$50.00 over night</label>
+          <input type="radio" id="50" value="50" name="shipping" />
+          <br />
+          <br />
+        </div>
+      </div>
 
-      <label for="0">Free 7 day</label>
-      <input type="radio" id="0" value="0" name="shipping" />
-      <br />
-      <label for="5">$5.00 three day</label>
-      <input type="radio" id="5" value="5" name="shipping" />
-      <br />
-      <label for="50">$50.00 over night</label>
-      <input type="radio" id="50" value="50" name="shipping" />
-      <br />
-      <br />
+      <div class="space"></div>
 
-      <input type="reset">
-      <input type="submit" />
+      <div class="shipHead">
+        <h3 style="text-transform: uppercase">Customer Info</h3>
+        <div class="info">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+          <br />
+          <br />
+          <label for="password">Password</label>
+          <input type="text" id="Password" name="Password" />
+          <br />
+          <br />
+
+          <input type="reset" />
+          <input type="submit" />
+        </div>
+      </div>
     </form>
   </body>
 </html>
