@@ -1,0 +1,94 @@
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.header {
+  padding: 1em;
+  position: relative;
+  background: #4682b4;
+  border-radius: 0.5em;
+  overflow: hidden;
+  clear: both;
+  color: white;
+}
+
+.space {
+  padding: 2em;
+  position: relative;
+}
+
+.item {
+  padding: 2em;
+  text-align: center;
+  border-radius: 0.5em;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 2em;
+  background: #4682b4;
+}
+
+.txt {
+  width: 50px;
+}
+
+.p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ship {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipHead {
+  color: white;
+  padding: 1em;
+  background: #4682b4;
+  border-radius: 0.5em;
+  overflow: hidden;
+  clear: both;
+}
+
+input[type="radio"] {
+  margin-right: 25em;
+}
+
+.info {
+  text-align: center;
+  color: white;
+  padding: 1em;
+  background: #4682b4;
+  border-radius: 0.5em;
+  overflow: hidden;
+  clear: both;
+}
+
+.table {
+  border-collapse: collapse;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: white;
+}
+
+.pheader {
+  padding: 1em;
+  position: relative;
+  background: #4682b4;
+  border-radius: 0.5em;
+  overflow: hidden;
+  clear: both;
+  color: white;
+  text-align: center;
+}
